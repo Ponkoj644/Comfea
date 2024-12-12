@@ -1,0 +1,74 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+/* ROOT VATIABLES */
+
+:root {
+  --bg_primary: #18181b;
+  --bg_secondary: #fcfcfc;
+  --bg_white: #ffffff;
+
+  --text_primary: #18181b;
+  --text-secondary: #70707b;
+  --text_white: #ffffff;
+
+  --radius_12: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text_primary);
+}
+
+/* CUSTOM CSS*/
+.btn_primary {
+  background-color: var(--bg_primary);
+  color: var(--text_white);
+  padding: 0.625rem 1.5;
+  border-radius: var(--radius_12);
+}
+.btn_secondary {
+  background-color: var(--bg_white);
+  color: var(--text_primary);
+  padding: 0.625rem 1.125rem;
+  border: 1px solid var(--text_primary);
+  border-radius: var(--radius_12);
+}
+
+.heading_52 {
+  font-size: 3.25rem;
+  color: var(--text_primary);
+  font-weight: 400;
+  line-height: 3.875rem;
+  letter-spacing: -2%;
+}
+.heading_24 {
+  font-size: 1.5rem;
+  color: var(--text_primary);
+  font-weight: 500;
+  line-height: 1.813rem;
+}
+
+.paragraph_20 {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
