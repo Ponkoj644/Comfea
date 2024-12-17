@@ -45,11 +45,25 @@ a {
 }
 
 /* BUTTONS */
+
+button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
 .btn_primary {
   background-color: var(--bg_primary);
   color: var(--text_white);
   padding: 0.625rem 1.5;
   border-radius: var(--radius_12);
+  border: 1px solid transparent;
+}
+
+.btn_primary:hover {
+  background-color: var(--bg_white);
+  border: 1px solid var(--text_primary);
+  color: var(--text_primary);
+  scale: 1.02;
 }
 .btn_secondary {
   background-color: var(--bg_white);
@@ -203,5 +217,219 @@ a {
 .hero_area .right_block > img:nth-child(1) {
   border: 2px solid white;
 }
-
 /* HERO PART CSS END */
+
+/* DISCOVER PART CSS START */
+
+.discover-area {
+}
+.discover-area .discover-wraper {
+  padding: 5rem 0;
+}
+
+.discover-area .section_heading {
+}
+
+.discover-area .discover-wraper .heading_52,
+.property-area .property-wraper .heading_52 {
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 0.9754rem + 3.2787vw, 3.25rem);
+  /* line-height-step: 2.325rem; */
+}
+
+.discover-wraper .section_heading button {
+  margin-bottom: 1.5rem;
+}
+
+.discover-area .discover-img-wraper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.discover-area .discover-img-wraper .card {
+  border: none;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.discover-area .discover-img-wraper .card:hover {
+  transform: translateY(-5px);
+}
+.discover-area .discover-img-wraper .card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: block;
+  border-radius: var(--radius_12);
+}
+.discover-area .discover-img-wraper .card h3 {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.discover-area .discover-img-wraper .card p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+/* DISCOVER PART CSS END */
+
+/* PROPERTY LISTING PART CSS START */
+.property-area {
+}
+
+.property-area .property-wraper {
+  padding: 5rem 0;
+}
+
+.property-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.property-container .property-card {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.property-container .property-card img {
+  width: 100%;
+  height: 21.25rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.property-container .property-card .property-tags {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  top: 10px;
+  right: 10px;
+}
+
+.property-container .property-card .property-tags span {
+  background: var(--bg_primary);
+  color: var(--text_white);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.property-container .property-card .property-tags span img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.property-container .property-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.property-container .property-content > h3,
+p {
+  margin-bottom: 0;
+}
+
+.property-container .property-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.property-container .property-content p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.property-container .property-content .property-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property-container .property-content .property-name-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.property-container .property-content .property-name h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.property-container .property-content .property-name p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.property-container .property-content .property-name img {
+  width: 20px;
+  height: 20px;
+}
+
+.property-container .property-content .property-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.property-container .property-content .property-price .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  color: var(--text_primary);
+}
+
+.property-container .property-content .property-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.property-container .property-content .property-info img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.property-container .property-content hr {
+  display: block;
+  height: 1.5px;
+  border-top: 1px solid #e4e4e7;
+  margin: 1rem 0;
+  opacity: 1;
+}
+
+.property-area .view-more {
+  /* width: 20%; */
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
