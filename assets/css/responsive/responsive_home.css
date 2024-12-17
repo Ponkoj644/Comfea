@@ -43,6 +43,11 @@
   .discover-area .discover-wraper .heading_52 {
     max-width: 35.38rem;
   }
+
+  /* FAQ PART START */
+  .faq-section .left-side .faq-img{
+  display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -72,7 +77,9 @@
     text-align: center;
   } */
 
-  .discover-area .discover-wraper, .property-area .property-wraper{
+  .discover-area .discover-wraper,
+  .property-area .property-wraper,
+  .faq-section .faq-wraper {
     padding: 3.75rem 0;
   }
 
@@ -107,4 +114,12 @@
   .property-container .property-content .property-info p {
     flex-direction: column;
   }
+
+
+  /* FAQ AREA CSS */
+
+  .faq-section .faq-wraper .heading_52{
+    line-height: 2.4rem;
+  }
+
 }
